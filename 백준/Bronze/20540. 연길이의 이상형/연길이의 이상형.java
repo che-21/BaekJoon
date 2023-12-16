@@ -7,12 +7,13 @@ public class Main {
 		char ns = mbti.charAt(1);
 		char tf = mbti.charAt(2);
 		char pj = mbti.charAt(3);
+		sc.close();
 		
-		char a = ((ie == 'I') ? 'E' : 'I');
-		char b = ((ns == 'N') ? 'S' : 'N');
-		char c = ((tf == 'T') ? 'F' : 'T');
-		char d = ((pj == 'P') ? 'J' : 'P');
+		String a = Character.toString((ie == 'I') ? 'E' : 'I');
+		String b = Character.toString((ns == 'N') ? 'S' : 'N');
+		String c = Character.toString((tf == 'T') ? 'F' : 'T');
+		String d = Character.toString((pj == 'P') ? 'J' : 'P');
 		
-		System.out.println(Character.toString(a)+Character.toString(b)+Character.toString(c)+Character.toString(d));
+		System.out.println(a+b+c+d);
 	}	
 }
